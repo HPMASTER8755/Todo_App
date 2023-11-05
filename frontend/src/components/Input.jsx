@@ -16,7 +16,7 @@ function Input() {
         const date = new Date().toLocaleString();
         const body = {todo, createdAt: date};
         console.log(body);
-        const response = await fetch("http://localhost:5000/api/todos", {
+        const response = await fetch("https://todo-app-pf7q.onrender.com/api/todos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
